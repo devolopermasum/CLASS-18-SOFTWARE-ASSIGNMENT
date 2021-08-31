@@ -1,0 +1,479 @@
+/* ====DEFAULT CSS START==== */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.full-website{
+    width: 1200px;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.mid-content{
+    max-width: 1000px;
+    margin: auto;
+}
+.bg{
+    background-color: #f7f9ff;
+}
+/* ====DEFAULT CSS END==== */
+/* =====HEADER CSS START======= */
+.header{
+    padding: 5px 0;
+    position:sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: #fff;
+}
+.hader-logo{
+    width: 30%;
+    
+}
+.header-logo img{
+    width: 70px;
+}
+.header-menu{
+    width: 70%;
+}
+.header-menu ul{
+    list-style: none;
+    text-align: right;
+}
+.header-menu ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.header-menu ul li a{
+    padding: 10px 0;
+    display: block;
+    color: black;
+    line-height: 25px;
+}
+/* =====HEADER CSS END======= */
+/* =====BANNER CSS START======= */
+.banner{
+    background: url(https://i.ibb.co/CKBLXP5/banner.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 150px 0;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.banner::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.375);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.banner-content h2{
+    font-weight: 400;
+}
+.banner-content h1{
+    margin: 30px 0px 30px 0px;
+    font-size: 60px;
+    font-weight: 600;
+    
+}
+.banner-content .btn {
+	padding: 20px 40px;
+	display: inline-block;
+	border-radius: 10px;
+	font-size: 20px;
+	background: white;
+	color: #7d7d7d;
+    margin-left: 10px;
+    font-weight: 600;
+    transition: .5s;
+}
+.banner-content .btn:hover{
+    background-color: #e79230;
+    color: white;
+}
+/* =====BANNER CSSS END======= */
+/* =====PRICING-TABLE CSS START======= */
+.pricing-table{
+    padding: 100px 0;
+}
+.pricing-title h1{
+    font-size: 56px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.pricing-title p{
+    color: #767676;
+    font-size: 15px;
+    line-height: 1.6em;
+}
+
+.pricing-items{
+    margin-top: 50px;
+}
+.pricing-item{
+    width: 31%;
+    background-color: #fff;
+    margin-right: 2%;
+}
+.pricing-heading{
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.pricing-heading h4{
+    font-size: 25px;
+    font-weight: 500;
+}
+.pricing-heading h1{
+    font-size: 50px;
+    margin: 20px 0;
+    background-color: rgba(221, 221, 221, 0.229);
+}
+.pricing-item:hover h1{
+    background: transparent;
+}
+.pricing-heading h1 span{
+    font-size: 20px;
+}
+.pricing-heading h3{
+    font-weight: 500;
+    font-size: 21px;
+}
+.pricing-heading p{
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+
+.pricing-content{
+    padding: 20px;
+}
+.pricing-content li{
+    list-style: none;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #767676;
+}
+.pricing-content li i{
+    color:#e79230;
+    font-size: 40px;
+    width: 60px;
+}
+
+.pricing-button{
+    text-align: center;
+    padding-bottom: 40px;
+    
+}
+.pricing-item .btn{
+    padding: 15px 30px;
+    background: #fff;
+    display:inline-block;
+    border-radius: 5px;
+    color:#7d7d7d ;
+    font-family: 600;
+    font-size: 20px;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.3);
+    margin-left: 12px;
+    transition: .5s;
+}
+/* ===HOVER PART=== */
+.pricing-item:hover .pricing-heading{
+    background-color: #e79230;
+    color:white;
+    transition: .5s;
+}
+.pricing-item:hover .pricing-button a{
+    background-color: #e79230;
+    color:white;
+    transition: .5s;
+}
+/* =====PRICING-TABLE CSS END======= */
+/* =====TEAM-SECTION CSS START======= */
+.team-section{
+    padding: 100px 0;
+    background-color: #fff;
+}
+.team-title h1 {
+	font-size: 35px;
+    font-weight: 500;
+}
+
+.team-members{
+    margin-top: 60px;
+}
+.team-member{
+    width: 22%;
+    margin-right: 2%;
+    box-sizing: border-box;
+    border: 6px double #E89433;
+}
+.team-bio{
+    padding: 20px;
+}
+.team-bio h1{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom:8px ;
+}
+.team-bio p{
+    color: #767676;
+    font-size: 18px;
+    font-weight: 400;
+}
+/* =====TEAM-SECTION CSS END======= */
+/* =====NEWSLETTER-SECTION CSS START======= */
+.newsletter{
+    padding: 100px 0;
+}
+.newsletter-title h3 {
+	font-size: 17px;
+	font-weight: 400;
+}
+.newsletter-title h1 {
+	margin: 50px 0;
+	font-size: 40px;
+	font-weight: 500;
+}
+.newsletter-form .email {
+	font-size: 20px;
+	padding: 15px 20px;
+	border-radius: 10px;
+	border: 1px solid #aa972c;
+    width: 40%;
+    transition: .3s;
+}
+.newsletter-form .email:focus {
+	box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.5);
+	outline: none;
+    border: 1px solid rgb(86, 67, 255);
+}
+.newsletter-form .subscribe-btn{
+    padding: 18px 70px;
+    background-color:#aa972c;
+    display: inline-block;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 600;
+    font-size: 20px;
+    border: 2px solid transparent;
+    margin-top: 15px;
+    transition: .5s;
+}
+.newsletter-form .subscribe-btn:hover{
+    background-color: #fff;
+    color: #e79230;
+    border: 2px solid #aa972c ;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.5);
+}
+/* =====NEWSLETTER-SECTION CSS END======= */
+/* =====BLOG-SECTION CSS START======= */
+.blog-section h1 {
+	text-align: center;
+	font-size: 45px;
+	margin-bottom: 30px;
+}
+.blog-image{
+    width: 43%;
+}
+.blog-content{
+    width: 54%;
+}
+.blog-content h1 {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 15px;
+    text-align: left;
+    margin-top: 20px;
+}
+.blog-content h1 span{
+    margin-right: 25px;
+}
+.blog-content p{
+    margin-bottom: 30px;
+    line-height: 1.6em;
+    color: #767676;
+    font-size: 14px;
+}
+/* =====BLOG-SECTION CSS END======= */
+/* =====TESTIMONIAL-SECTION CSS START======= */
+.testimonial-section{
+    padding: 100px 0;
+}
+.testimonial-title h2{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.testimonial-title p{
+    font-size: 35px;
+}
+
+.testimonial-items{
+    margin-top: 50px;
+}
+.testimonial-item{
+    width: 31%;
+    margin-right: 2%;
+    border: 2px solid #ddd;
+    box-sizing: border-box;
+}
+.testimonial-item .t-content{
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.2);
+    position: relative;
+}
+.testimonial-item .t-content::after {
+	content: "";
+	position: absolute;
+	top: 92%;
+	left: 37%;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px 35px 0 35px;
+	border-color: #fff transparent transparent transparent;
+}
+.testimonial-item .t-content p{
+    line-height: 1.6em;
+    color: #767676;
+    font-size: 18px;
+    position: relative;
+}
+.testimonial-item .t-content::before{
+    content: "\f10d";
+    font-family: "fontawesome";
+    font-size: 70px;
+    position: absolute;
+    opacity: .1;
+    top: 2%;
+    left: 5%;
+}
+.testimonial-item .t-image{
+    padding: 40px;
+}
+.testimonial-item .t-image img{
+    width: 50px;
+    float: left;
+    margin-right: 15px;
+    border: 5px solid #aa972c;
+}
+.testimonial-item .t-image .t-bio h3{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.testimonial-item .t-image .t-bio span{
+    display: inline-block;
+    color: #767676;
+    font-size: 17px;
+    font-weight: 400;
+}
+/* =====TESTIMONIAL-SECTION CSS END======= */
+/* =====CONTACT-SECTION CSS START======= */
+
+.contact-section{
+    padding: 100px 0px 50px 0;
+}
+.contact-title h1{
+    font-weight: 500;
+}
+.contact-title p {
+	color: #767676;
+	font-size: 15px;
+	line-height: 1.6em;
+	width: 600px;
+	margin:30px auto;
+}
+
+.contact-form{
+    text-align: center;
+}
+.contact-form .email,.name,.tel,.message,.submit{
+	border-radius: 10px;
+	outline: none;
+	background: #fff;
+	margin-top: 20px;
+	font-size: 20px;
+	border: none;
+	border: 1px solid #aa972c;
+    padding-left: 20px;
+    transition: .3s;
+}
+.contact-form .email:focus,.name:focus,.tel:focus,.message:focus,.submit:focus{
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.5);
+    border: 1px solid green;
+}
+.contact-form .email {
+    height: 55px;
+	width:600px;
+}
+.contact-form .name{
+    height: 55px;
+	width: 280px;
+    margin-right: 12px;
+}
+.contact-form .tel{
+    height: 55px;
+	width: 280px;
+}
+.contact-form .message{
+    width: 600px;
+    height: 150px;
+    padding-top: 20px;
+}
+.contact-form .submit{
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: #aa972c;
+    padding-right:20px;
+    color: #fff;
+    transition: .5s;
+    border: 2px solid transparent;
+}
+.contact-form .submit:hover{
+    background-color: #fff;
+    color: #e79230;
+    border: 2px solid #aa972c ;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.5);
+}
+/* =====CONTACT-SECTION CSS END======= */
+/* =====FOOTER-SECTION CSS START======= */
+.footer{
+    padding: 10px 0;
+}
+.footer h3{
+    font-weight: 400;
+}
+/* =====FOOTER-SECTION CSS END======= */
